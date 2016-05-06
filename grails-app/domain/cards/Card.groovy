@@ -1,7 +1,8 @@
 package cards
 
 class Card {
+  static belongsTo = [deck: Deck]
 
-    static constraints = {
-    }
+  String content
+  Date dateUpdated
 }

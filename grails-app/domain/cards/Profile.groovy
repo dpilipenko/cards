@@ -1,7 +1,8 @@
 package cards
 
 class Profile {
+  static hasMany = [decks: Deck]
 
-    static constraints = {
-    }
+  String name
+  Date dateCreated
 }

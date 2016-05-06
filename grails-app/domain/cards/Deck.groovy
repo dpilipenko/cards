@@ -1,7 +1,9 @@
 package cards
 
 class Deck {
+  static belongsTo = [owner: Profile]
+  static hasMany = [cards: Card]
 
-    static constraints = {
-    }
+  String title
+  Date dateUpdated
 }
