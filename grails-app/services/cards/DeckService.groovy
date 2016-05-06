@@ -5,7 +5,23 @@ import grails.transaction.Transactional
 @Transactional
 class DeckService {
 
-    def serviceMethod() {
+  List list() {
 
-    }
+  }
+  
+  def create(Deck deck) {
+
+  }
+
+  def read(int deckID) {
+
+  }
+
+  def update(int deckID, Deck deck) {
+
+  }
+
+  def delete(int deckID) {
+
+  }
 }
