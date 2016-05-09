@@ -1,9 +1,14 @@
 package cards
 
-class Card {
-  static belongsTo = [deck: Deck]
+import grails.rest.*
 
-  String content
-  Boolean isDeleted
-  Date dateUpdated
+@Resource
+class Card {
+	String title
+	Date dateCreated
+	Date lastUpdated
+
+    static constraints = {
+    	title blank:false
+    }
 }

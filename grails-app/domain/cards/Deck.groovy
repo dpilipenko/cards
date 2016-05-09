@@ -1,9 +1,15 @@
 package cards
 
-class Deck {
-  static belongsTo = [owner: Profile]
-  static hasMany = [cards: Card]
+import grails.rest.*
 
-  String title
-  Date dateUpdated
+@Resource
+class Deck {
+	String title
+	static hasMany = [cards: Card]
+	Date dateCreated
+	Date lastUpdated
+
+    static constraints = {
+    	title blank:false
+    }
 }
